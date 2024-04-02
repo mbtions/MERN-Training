@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="./content.html">
+      <label for="name">Name</label> <br />
+      <input
+        type="text"
+        id="name"
+        name="UserName"
+        placeholder="Enter Your Name"
+        autocomplete="off"
+      />
+      <br /><br />
+      <label for="age">Age</label> <br />
+      <input
+        type="number"
+        id="age"
+        value="18"
+        name="userAge"
+        placeholder="Enter Age"
+      />
+      <br /><br />
+      <label for="pwd">Password</label> <br />
+      <input
+        type="password"
+        id="pwd"
+        name="userPassword"
+        placeholder="Enter Password"
+        required
+      />
+      <br /><br />
+      <label for="email">Email</label> <br />
+      <input
+        type="email"
+        id="email"
+        name="userEmail"
+        placeholder="Enter Your Email"
+        required
+      />
+      <br /><br />
+      <label for="dob">Date of Birth:</label> <br />
+      <input type="date" />
+      <br /><br />
+      <label><b>Hobbies:</b></label> <br />
+      <label for="Swimming">Swimming</label>
+      <input
+        type="checkbox"
+        name="userHobbies"
+        id="Swimming"
+        value="Swimming"
+      />
+      <br />
+      <label for="Cricket">Cricket</label>
+      <input type="checkbox" name="userHobbies" id="Cricket" value="Cricket" />
+      <br />
+      <label for="Art">Art</label>
+      <input type="checkbox" name="userHobbies" id="Art" value="Art" checked />
+      <br /><br />
+      <label><b>Gender:</b></label> <br />
+      <label for="male">Male</label>
+      <input type="radio" name="userGender" id="male" />
+      <br />
+      <label for="female">Female</label>
+      <input type="radio" name="userGender" id="female" checked />
+      <br /><br />
+      <select name="vehicle">
+        <option value="Car">Car</option>
+        <option value="Truck">Truck</option>
+        <option value="Bus" selected>Bus</option>
+        <option value="Train">Train</option>
+        <option value="Aeroplane">Aeroplane</option>
+      </select>
+      <br />
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Write about yourself in not more than 250 words"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Submit Form" />
+      <input type="reset" value="Reset Form" />
+      <!-- <button type="reset">Reset</button> -->
+    </form>
+  </body>
+</html>

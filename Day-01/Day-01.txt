@@ -17,6 +17,8 @@ Refer to the websites for HTML:
 - mdn.docs
 - w3schools
 
+Q. what happens when you type a url in a browser?
+
 Semantic Tags for what purpose? 
 => To help the browser to understand the page content better.
 => for screen readers to interpret whats there on the page.
@@ -122,5 +124,122 @@ _blank
 _self
 _parent
 _top
+framename
 
 Q. difference in all these attribute values?
+
+=> Parent frame
+
+
+Grand Parent
+    Parent
+        Child
+          _blank  (in New Tab, link will be rendered)
+          _self  (On self frame link will be rendered)
+          _parent  (On parent frame link will be rendered)
+          _top  (Grand Parent at Top in Hierarchy will be rendered with the link)
+
+
+
+Section Tag:
+To break in sections or group similar meaning content together.
+
+Lists: 
+ol ul dl
+
+start attibute, 
+type attribute
+
+dt: dt description title
+dd: description data
+
+<dl>
+  <dt> </dt>
+  <dd> </dd>
+</dl>
+
+
+Table:
+th : emphasize(bold) and center align.
+tr
+td
+
+colspan: 
+colspan=1 by default
+colspan=2 takes two cells
+
+
+thead
+tbody
+: to make the entries have the same headings and body even when new entries are loaded
+10 of 100 
+11-20 of 100
+
+caption
+: Caption for the Table (at top just above the table)
+
+tr does not support rowspan
+
+for table CSS:
+border-collapse: collapse;
+
+
+Form Tag:
+input tag
+=> type: 
+          text
+          number  (Can be inc or dec)
+              includes {0-9, -, e, ., +}
+          password
+
+Q. why label and not p?
+
+required: attribute to make the input required to fill 
+
+How to turn off autocomplete?
+autocomplete="off"
+
+checkbox and radio take value attribute
+value=[val]
+
+by default behaviour of a button in form is to submit the form.
+
+textarea
+
+website for forms:
+reacthook forms
+formica
+
+HTML methods: (search for it)
+Clicking on API, ex google.com to get google website is GET request.
+
+Select, options tag
+
+Problem:
+experience?
+
+
+
+Video Tag:
+controls
+autoplay
+muted
+
+
+bdo Tag:
+dir attribute => rtl right to left
+ltr = left to right
+
+abbr
+q
+blockquote
+address
+cite
+fieldset
+
+Normal Distribution: 99.7
+Learning Curve 20:80
+
+input type=filename
+audio tag 
+
