@@ -1,0 +1,126 @@
+Q. why "index.html" is named?
+
+Tag for HTML.
+<html>   // opening Tag
+    
+    [content]
+
+</html>  // closing Tag
+
+Head
+<head></head>  => All processing inside head such as meta, link, script, etc.
+
+Body
+<body></body>  => All content of the page goes inside body tag.
+
+Refer to the websites for HTML:
+- mdn.docs
+- w3schools
+
+Semantic Tags for what purpose? 
+=> To help the browser to understand the page content better.
+=> for screen readers to interpret whats there on the page.
+
+Example: 
+1=>header tag
+<header></header>
+
+2=>footer Tag
+<footer></footer>
+
+3=>main Tag => Main content goes here!
+<main></main>
+
+=> Inside main
+heading Tags:
+<h1> </h1> ..... <h6> </h6>
+
+Q. size(h6) < size(p) why??
+
+Comments in HTML:
+<!-- 
+  ...
+-->
+
+if <paragraph> or not then gives it default behaviour of P tag.
+
+meta: 
+additional information to your webpage.
+
+b vs strong tag
+b => bold
+strong => bold with effects.
+
+Example in mobile which have bold text bydefault will show more 
+boldness in case of strong tag and not in b tag.
+
+em vs i tag
+
+u vs ins
+ins: insert tag that shows data which is inserted.
+
+ins and del are used together to show updation.
+
+s: strikethrough 
+
+italic + bold =>  nesting of i and b
+
+
+aside tag:
+Q. why aside? 
+=> for ads not to be associated with the main page for its content. (for better SEO optimization)
+
+
+nav tag:
+for navigation
+
+
+Q. why more than one space still treated as single space?
+
+&nbsp;
+: HTML entity stands for non-breaking space.
+
+&gt;
+
+link tag
+<a> anchor
+
+<a href="/home">Home</a> : Relative url
+this link "/home" is a relative url that is it is [origin]/home
+
+
+origin: DNS of a website
+http or https: directs you to change the origin, if not included then it will not navigate to the cross origin url.
+
+if ://www.google.com then also behaves same.
+similarly: h://url
+
+image tag:
+<img>
+why nor requirement of closing tag? => Since there is no content in these tags therefore
+do not require closing tag.
+
+inline elements vs block elements
+
+NOTE: Not mandatory to write in double quotes.
+
+Q. xhtml vs html 
+=> extension
+=> configuration information to be added in case of xhtml
+=> error handling
+=> case sensitive in xhtml
+=> Quotes cannot be ignored.
+
+Quotations:
+title attribute to any tag.
+
+span used for specific elements.
+
+target attribute: 
+values can be :
+_blank
+_self
+_parent
+_top
+
+Q. difference in all these attribute values?
