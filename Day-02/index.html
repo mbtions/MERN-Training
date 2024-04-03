@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--character set of variable length upto 8 bits.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      span {
+        background-color: aquamarine;
+        /* width: 1000px; can not be used on inline elements*/
+      }
+      div {
+        background-color: yellow;
+      }
+      #container1 {
+        background-color: red;
+      }
+      .container {
+        background-color: bisque;
+      }
+      .big_text {
+        font-size: 32px;
+      }
+      .heading-two.big_text {
+        background-color: pink;
+      }
+      .heading-three {
+        color: orange;
+      }
+    </style>
+    <title>CSS</title>
+  </head>
+  <body>
+    <span>span text</span>
+    <!-- inline styling -->
+    <div style="background-color: aquamarine; color: blueviolet"></div>
+    <div class="container" id="container1">content</div>
+    <div class="container" id="container2">Heading</div>
+
+    <div class="heading-two">
+      <div class="big_text">
+        heading-two: kabab-Case (CSS) heading_two: snake_Case (python)
+        headingTwo: camelCase (javascript) HeadingTwo: PascalCase (React)
+      </div>
+    </div>
+    <div class="heading-three big_text">
+      heading-two: kabab-Case (CSS) heading_two: snake_Case (python) headingTwo:
+      camelCase (javascript) HeadingTwo: PascalCase (React)
+    </div>
+  </body>
+</html>

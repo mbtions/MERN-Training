@@ -1,0 +1,40 @@
+.parent {
+  color: brown;
+  background-color: bisque;
+  padding: 8px;
+  margin: 8px;
+  border: 2px solid black;
+  /* top right bottom left */
+  /* top left&right bottom */
+  /* top&bottom right-left */
+}
+
+span {
+  border: 1px solid red;
+  padding: 5px;
+  margin: 15px;
+}
+.heading {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 30px;
+}
+
+/* .parent p {
+} */
+.parent {
+  p {
+    background-color: red;
+    color: white;
+    padding: 20px;
+  }
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.right {
+  text-align: center;
+  margin: 0 0 0 auto;
+}

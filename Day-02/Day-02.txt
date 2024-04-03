@@ -1,0 +1,83 @@
+03 April 2024
+Regex (Regular expressions)
+
+*CSS*
+insconsistency leads to non applied css.
+ex: width property to span element, since span is not a block element.
+
+AScII length : 128 characters
+UTF-8: Extended ASCII length: 256 characters
+
+screen readers when sent text capitalised through css helps in proper reading.
+
+Inline CSS has highest priority and cannot be cached.
+
+Internal CSS
+selectors:
+1. Tag selectors      (tagName)
+2. Id selectors       (#idName)
+3. Class selectors    (.className)
+4. Universal selector (*)
+5. Combinator selectors (>, +, ~)
+
+Cases:
+heading-two:    kabab-Case  (CSS)
+heading_two:    snake_Case  (python)
+headingTwo:     camelCase   (javascript)
+HeadingTwo:     PascalCase  (React)
+
+BoxModel:
+=> Content
+=> Margin
+=> Padding
+=> Border
+
+Width is given to content.
+
+box-sizing =>
+border-box (wrt border)
+content-box (wrt content)
+
+Q. PPI vs DPI
+
+Q. Logical vs Physical Pixel.
+
+Industry used border-box by default.
+
+width = border(l&r)+content+padding
+Q. write the same for height.
+
+centering a div
+1. Content centering by text-align property.
+2. Margin:auto and width
+
+
+center
+
+CSS units:
+[Absolute]
+=> pixel(px) 1/96 
+[Relative]
+=> root element's font-size (rem) 
+=> element's font-size (em)
+
+The root element's font-size is rem
+
+em=> (relative to its immediate parent)
+font-size: em will be relative to its parent. 
+parent =10 px => child => 20px for 2em
+
+other than font-size it will depend on itself only for relativity.
+ex: width relative to its font-size.
+
+
+rem => (relative to its root element i.e. html tag)
+
+
+depend
+
+mostly use for the rem since it has more usability.
+
+Use cases for em unit:
+1. when want to design same element of similar configurations but somewhere small, somewhere big,  somewhere normal.
+relativity. (dynamic design)

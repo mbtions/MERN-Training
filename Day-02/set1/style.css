@@ -1,0 +1,22 @@
+.parent {
+  font-size: 1em;
+}
+.child {
+  font-size: 2rem;
+}
+.btn {
+  background-color: rgb(56, 56, 226);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 2em;
+  width: 8em;
+  margin: 10px auto;
+}
+.small {
+  font-size: 1em;
+}
+.big {
+  font-size: 3em;
+}
