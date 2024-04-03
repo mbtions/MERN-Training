@@ -1,0 +1,48 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 32px;
+}
+.parent {
+  ol {
+    background-color: rgb(63, 63, 247);
+    color: white;
+  }
+  ul:first-child {
+    background-color: bisque;
+  }
+  ul:last-child {
+    background-color: burlywood;
+
+    li:nth-child(3) {
+      background-color: aquamarine;
+      width: fit-content;
+    }
+    li:nth-of-type(2) {
+      background-color: coral;
+    }
+  }
+}
+
+/* .parent ul {} Descendant Selector */
+/* .parent { ul{} } */
+
+.parent > ul {
+  background-color: aquamarine;
+  /* Not applicable since ul are not direct child of parent */
+}
+
+.parent + ul {
+  background-color: cadetblue;
+  /* Only applicable to Adjacent Sibling */
+}
+
+.parent ~ ul {
+  background-color: chocolate;
+  /* Applicable to all th siblings at same level */
+}

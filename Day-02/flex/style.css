@@ -1,0 +1,24 @@
+.parent {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.child {
+  background-color: rgb(231, 207, 112);
+  border: 2px solid white;
+  width: 20px;
+  flex-basis: 2em; /* initial value of a flex item */
+  /* display: inline; */
+  flex-shrink: 0;
+}
+
+.search-box {
+  flex-grow: 3; /* all remaining space will be rendered by this item*/
+  /* 3 times normal partition */
+  flex-shrink: 1;
+}
+.cart {
+  flex-grow: 1;
+}

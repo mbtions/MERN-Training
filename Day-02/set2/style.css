@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  background-color: orange;
+  width: 100vw;
+  height: 100vh;
+}
+.child {
+  background-color: orangered;
+  width: 50vw;
+  min-height: 50px;
+  max-height: 200px;
+  overflow: scroll;
+}

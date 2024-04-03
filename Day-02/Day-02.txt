@@ -18,7 +18,7 @@ selectors:
 2. Id selectors       (#idName)
 3. Class selectors    (.className)
 4. Universal selector (*)
-5. Combinator selectors (>, +, ~)
+5. Combinator selectors (>, +(sibling), ~)
 
 Cases:
 heading-two:    kabab-Case  (CSS)
@@ -81,3 +81,46 @@ mostly use for the rem since it has more usability.
 Use cases for em unit:
 1. when want to design same element of similar configurations but somewhere small, somewhere big,  somewhere normal.
 relativity. (dynamic design)
+
+Viewport:
+vh viewport height
+vw viewport width
+
+max vh: 100vh
+min vh 0vh
+same goes for the vw
+
+vmin: (overflow)
+Useful when content overflows, then the given or assigned value is considered minimum
+
+vmax: (underflow)
+
+
+overflow: Hidden or scroll etc
+
+
+:hover, :visited, :first-child,
+:last-child
+are
+pseudo-classes
+
+::
+are pseudo-elements
+
+nth-child is a pseudo-class.
+
+tagName:nth-child(k)  read as kth child which is the given or selected "tagName" tag element.
+
+nth-of-type() => to select nth element of some type.
+
+parent > direct child
+=> direct child of parent.
+
+
+FlexBox Game:
+https://flexboxfroggy.com/
+
+
+position
+display
+z-index
