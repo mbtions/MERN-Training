@@ -1,0 +1,67 @@
+.parent {
+  display: grid;
+  /* grid-template-columns: 100px 200px 100px; */
+  /* for n times columns you will have functions such as repeat */
+  /* grid-template-columns: repeat(4, 50px); */
+  /* grid-template-rows: 50px 75px 50px; */
+
+  /* To allow varying rows to have proper space per given format */
+  /* grid-auto-rows: 50px 75px 50px;  */
+  grid-auto-rows: 50px 300px 50px;
+
+  /* When you want to divide in fractions */
+  grid-template-columns: 1fr 1fr 1fr; /* it is reponsive */
+  /* background-color: aqua; */
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.child {
+  background-color: wheat;
+  /* border: 1px solid white; */
+
+  /* Make child flex to justify their content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.menu {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.green {
+  background-color: rgb(26, 181, 26);
+  border: green solid 2px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.yellow {
+  background-color: rgb(226, 226, 122);
+  border: yellow solid 2px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.red {
+  background-color: rgb(220, 83, 83);
+  border: red solid 2px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.blue {
+  background-color: rgb(79, 79, 227);
+  border: blue solid 2px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

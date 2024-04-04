@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent {
+  transition-property: height, width;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  background-color: rgb(255, 150, 127);
+  color: azure;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  padding: 10px;
+
+  h2 {
+    height: 75px;
+    background-color: black;
+  }
+}
+
+@media (800px <= width /* <= 1200px */) {
+  .parent {
+    background-color: blue;
+  }
+  h2 {
+    height: 100px;
+    background-color: blue;
+  }
+}
+
+@media (200px <= width <= 400px) {
+  .parent {
+    height: 200px;
+    width: 200px;
+  }
+}

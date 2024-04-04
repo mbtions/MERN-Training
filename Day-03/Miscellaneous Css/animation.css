@@ -1,0 +1,44 @@
+button {
+  scale: 2;
+
+  position: absolute;
+  top: 20px;
+  left: 40px;
+
+  animation-name: button-animation-type-1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes button-animation-type-1 {
+  /* starting point */
+  /* from {
+    top: 20px;
+    left: 40px;
+  }
+  to {
+    top: 20px;
+    left: 500px;
+  } */
+  /* ending point */
+
+  0% {
+    top: 20px;
+    left: 40px;
+  }
+  30% {
+    top: 20px;
+    left: 500px;
+  }
+  60% {
+    top: 500px;
+    left: 500px;
+  }
+  100% {
+    top: 500px;
+    left: 40px;
+  }
+}

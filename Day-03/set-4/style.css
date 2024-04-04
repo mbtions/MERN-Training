@@ -1,0 +1,11 @@
+.parent {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(50px, 100px)); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.child {
+  /* min-width: 50px;
+  max-width: 100px;
+  min-height: 50px;
+  max-height: 100px; */
+}

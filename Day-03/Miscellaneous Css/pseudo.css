@@ -1,0 +1,24 @@
+button {
+  /* To center button */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* height: 30px; */
+  padding: 8px 16px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+
+  /* This transition is assigned to parent element since it will allow it get reversed on return */
+  transition-property: scale;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* button:hover {
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+  scale: 1.3;
+} */

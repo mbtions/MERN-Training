@@ -1,0 +1,15 @@
+.parent {
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  border-bottom: 1px solid red;
+}
+
+.navbar {
+  background-color: bisque;
+  padding: 16px;
+  /* flex-grow: 1; */
+  width: calc(100% - 50px); /* space mandatory */
+}

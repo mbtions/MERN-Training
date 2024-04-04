@@ -1,0 +1,157 @@
+04 April 2024
+
+open GIT Bash Here
+> git init 
+initializes the repository
+> git status
+> git add .
+> git status
+> git commit -m "message"
+commits the final changes
+> git commit -m "message" -m "description"
+> git push
+error: no remote found
+> git remote add <name> <url>
+> git remote add MERN_project [url]
+initially you need to set up an upstream
+> git push --set-upstream MERN_project master
+it will ask for Login and authorization
+
+
+Grid : is for 2 D
+Flexbox : is for 1 D
+
+grid-template-columns: 
+=> grid-template-columns: 100px 200px 100px; 
+It will allow three columns of respective size in pixels
+
+=> grid-template-columns: repeat(4, 50px);
+repeat(num_of_columns, size_of_column);
+
+=> When you want to divide in fractions
+grid-template-columns: 1fr 1fr 1fr; /* it is reponsive */
+give fr for n number of times for n columns
+
+column-gap :
+Gap between columns
+
+Q. grid area
+Q. row-span and col-span
+
+By default, in flex, items stretch.
+
+when align-items: center; // it causes elements to shrink in grid
+
+=> for repeat function:
+1. #num of col 
+2. how much space occupied by each
+
+minmax takes minimum and maximum values
+minmax (minval, maxval)
+
+CSS-Tricks => Flex and grid and POsition
+
+
+Position:
+
+1. Static =>
+  top bottom left right and z-index properties doesnot work here.
+
+2. Relative =>
+other things hide because of this element's relativity
+=> You can use top left right bottom properties.
+=> it occupies position, and comes over other elements
+=> when top: 0px, it will be moved from its current position.
+=> Does not forget its default spacing.
+
+3. Absolute =>
+Forgets its default spacing. 
+Adjusts wrt body element (tag). [Ancestor of all]
+gets out of the document flow.
+
+4. fixed =>
+by default, reference point is body element
+Will not take its space.
+
+5. sticky =>
+When you want to compromise between relative and fixed position.
+
+
+*Reponsiveness*
+
+@media
+
+Transition:
+In 1 step, it is a subset of an animation
+
+Animation:
+Includes a number of steps.
+
+transition-property
+on which element you want to apply when change.
+
+transition-duration
+for how much time it will take to complete
+
+transition-timing-function 
+manner of transition.
+
+Q. why pseudo-class?
+Since we wrote styling by selecting the particular applicable element.
+
+Pseudo =>
+not genuine, false, fake
+
+scale is to enlarge or make the element small.
+it is multiplicating factor.
+
+Give transition to parent so that they get inactive when your effect goes back (or reverses).
+
+Animation => shift of one style to another
+
+animation-name: button-animation-type-1;
+any name you like
+
+keyframes [animation-name] {
+    from {
+
+    } 
+    to {
+
+    }
+}
+
+or
+
+keyframes [animation-name] {
+    0% {
+
+    } 
+    20% {
+
+    }
+    ...
+    80% {
+
+    }
+    100% {
+
+    }
+}
+
+animation-duration
+
+animation-timing-function
+
+animation-iteration-count: number of times you want to animate
+
+calc function in CSS
+
+Q. visibility: none vs display: hidden vs display: none?
+Q. inherit?
+=> 
+
+to remove a property use unset.
+
+Pseudo-elements ?
+

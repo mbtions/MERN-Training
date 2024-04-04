@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: beige;
+}
+
+.parent {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  position: fixed;
+  top: 20px;
+  left: 100px;
+  z-index: 1;
+}
+
+.logo,
+.header {
+  background-color: aqua;
+  border: 1px solid white;
+}
+
+.content {
+  background-color: blueviolet;
+  /* This z-index does not work since it has static position by default */
+  z-index: 2;
+}
