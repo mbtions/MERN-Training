@@ -155,3 +155,25 @@ to remove a property use unset.
 
 Pseudo-elements ?
 
+<= Second Half =>
+
+JavaScript
+Q. why only JS for frontend?
+
+webapp for android, ios, linux => js is portable
+
+Chrome is a compiler, interpreter
+UI + developer tools + JS engine (interpreter + compiler)
+
+JS engines in chrome: V8 engine, mozilla: spidermonkey, edge: chakra, etc
+
+ECMAScript, a governing body that governs the rules for JS
+ES6 in 2017 is modern JavaScript.
+
+W3C governs: HTML, CSS, JS
+
+script tag can be inside head or body (anywhere in the body).
+
+internal script as well.
+
+separation of concerns: separate 
