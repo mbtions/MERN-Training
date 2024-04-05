@@ -1,0 +1,70 @@
+05 April 2024
+
+Note: Do not declare String Number and Booleans as objects.
+Since they are immutable datatypes and when declared as objects, they lose their immutability, therefore not preferred.
+
+
+JSON: 
+JavaScript Object Notation
+
+obj is const and not the key-value pair (or properties).
+
+=> map, filter, reduce
+
+Q. for..of, for..in Loops?
+=> The for..of loop in JavaScript allows you to iterate over iterable objects (arrays, sets, maps, strings etc).
+
+=> The for...in statement iterates over all enumerable string properties of an object (ignoring properties keyed by symbols), including inherited enumerable properties.
+
+Q. DOM?
+
+=> Document Object
+=> Database Interface
+
+window
+  document
+    form / image / anchor
+      element
+        Link 
+
+Window Object properties and methods
+    console
+    closed
+    setTimeOut()
+
+
+scroll by 100px
+
+window > document object > body >
+
+console.log(res) // will show iterables
+HTMLCollection is iterable and not an array.
+
+Iterable Vs array
+Array is a proper class
+
+Buildings are iterables 
+but a special MCA building is an array.
+
+ClassName
+QuerySelector
+QuerySelectorAll
+
+Q. why do we need to include script tag at the bottom of the page?
+=> Because we do not want the user to stare at a blank page while it loads up the JS(Which is much more complex than CSS or HTML like Joy said) we put the JS script tag at the end. After all the JS will be called once the user has something to interact with.
+
+getElementByName 
+name attribute
+
+Q. why log and dir have different outputs?
+
+Q. Can I change Tag name using JS?
+=> No, You can't
+
+Q. Can you insert
+
+shallow Copy Vs Deep Copy?
+res and Obj at same address
+
+Node: cloneNode method is preferable for Deep Copy.
+
