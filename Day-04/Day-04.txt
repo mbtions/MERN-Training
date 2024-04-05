@@ -68,3 +68,26 @@ res and Obj at same address
 
 Node: cloneNode method is preferable for Deep Copy.
 
+Q. Node Vs Element
+
+Element: remove() method
+Node: remove() method
+
+
+EVENT=>
+Any interaction is an event
+
+Q. why CDN link in head?
+
+Events are applied on elements/node
+
+onsubmit event
+keydown
+onchange
+
+Q. Validation: Form filled or Error for Unfilled Values
+
+Higher Order Functions
+Callback Functions
+
+try for area

@@ -144,22 +144,26 @@ const obj = {
 
 //=====================================
 // for newhtml.html file
-const ne = document.createElement("h3");
-ne.innerText = "Dynamic Text";
-console.log(ne);
+// const ne = document.createElement("h3");
+// ne.innerText = "Dynamic Text";
+// console.log(ne);
 
-// To add into the html.
-document.body.appendChild(ne) // appends at the end of the body
+// // To add into the html.
+// document.body.appendChild(ne) // appends at the end of the body
 
-// add child
-const divs = document.getElementsByTagName("div")
-divs[0].appendChild(ne);
-divs[1].appendChild(ne);
-// same element cannot be appended to only one place 
-// therefore clone the element and then use multiple places.
-// since there may be different elements with same id which is conflicting therefore no more than one place, it can be added.
+// // add child
+// const divs = document.getElementsByTagName("div")
+// divs[0].appendChild(ne);
+// divs[1].appendChild(ne);
+// // same element cannot be appended to only one place 
+// // therefore clone the element and then use multiple places.
+// // since there may be different elements with same id which is conflicting therefore no more than one place, it can be added.
 
 
-// remove child
-const elems = document.getElementsByTagName("p")
-divs[0].removeChild(elems[0])
+// // remove child
+// const elems = document.getElementsByTagName("p")
+// divs[0].removeChild(elems[0])
+
+// remove: removes the parent
+// removeChild: removes the child
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Handling</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="form-content">
+      <form onsubmit="submitForm(event)">
+        <label for="fname">First Name:</label> <br />
+        <input
+          type="text"
+          name="firstName"
+          id="fname"
+          value="John"
+          onchange="firstNameChange(event)"
+          placeholder="Enter first name"
+        />
+        <br />
+        <br />
+        <label for="lname">Last Name:</label> <br />
+        <input
+          type="text"
+          name="lastName"
+          id="lname"
+          value="Doe"
+          placeholder="Enter last name"
+        />
+        <br />
+        <br />
+        <label for="age">Age:</label> <br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          value="18"
+          placeholder="Enter age"
+        />
+        <br />
+        <br />
+        <label>Hobbies:</label><br />
+
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="webD"
+          value="Web Development"
+          checked
+        />
+        <label for="webD">Web Development</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="sports" value="Sports" />
+        <label for="sports">Sports</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="drawing" value="Drawing" />
+        <label for="drawing">Drawing</label> <br />
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
