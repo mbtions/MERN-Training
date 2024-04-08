@@ -1,0 +1,47 @@
+08 April 2024
+
+Q. array methods
+Q. callback 
+
+shift deletes
+
+reduce, filter, map, splice, slice.
+
+Q. forEach vs Map?
+
+Q. String methods
+=> trim method to trim white spaces
+
+* Asynchronous JavaScript *
+
+If you want to run a function after 10 minutes, we use setTimeOut but then just after 10 minutes it takes some time to process and ready the execution.
+
+JavaScript is a single-threaded language.
+A process has multiple threads and has atleast a single thread that is called main thread.
+
+Callstack waits for none and executes immediately
+then how to execute a certain code after a particular interval?
+
+setTimeout(fn, time);
+
+same thing as with setTimeout happens with event handlers
+
+browser has PP + button id and all other details
+
+addEventListener(event-type, callback-fn)
+
+forEach callback can execute immediately, (synchronous callback)
+
+Event handlers callbacks are asynchronous callbacks.
+
+* FETCH *
+
+req.then or direct code.then or fetch.then
+
+Q. what is body: (...) in response?
+body: (...) or body: ReadableStream
+ReadableStream is in packets form
+
+// then also returns some data
+
+can we store the data somewhere else and console just when data received.

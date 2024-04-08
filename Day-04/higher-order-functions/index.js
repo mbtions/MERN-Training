@@ -26,4 +26,4 @@ sum(3, 5, print); // callback for sum is print
 // promises
 
 // link for notes
-https://shorturl.at/egtL3
+// https://shorturl.at/lvzCQ

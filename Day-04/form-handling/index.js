@@ -52,7 +52,10 @@ const submitForm = (e) => {
     }
     console.log(res);
 }
-// we use e.preventDefault(); since this func will not work since just as it submits, it then refreshes all the value and makes the data disappear 
+// we use e.preventDefault(); 
+// since this func will not work since 
+// just as it submits, it then refreshes 
+// all the value and makes the data disappear 
 
 // Validation: Form filled or Error for Unfilled Values
 
