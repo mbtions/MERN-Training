@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        /* position: relative; */
+        /* top: 20px; */
+        margin: auto;
+        height: 100px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+      footer {
+        height: 400px;
+        background-color: black;
+      }
+      img {
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0 auto;
+      }
+      .news-card {
+        /* position: relative; */
+        background-color: #c6ebc5;
+        padding: 24px;
+        max-width: 300px;
+        margin: 40px auto;
+        border-radius: 8px;
+      }
+      #root {
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px; */
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NEWS TODAY</h1>
+    </header>
+    <main>
+      <div id="root"></div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

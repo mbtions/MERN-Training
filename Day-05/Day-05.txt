@@ -45,3 +45,11 @@ ReadableStream is in packets form
 // then also returns some data
 
 can we store the data somewhere else and console just when data received.
+
+who handles promise?
+
+fetch promise is handled by browser.
+
+JavaScript is just a Callstack
+
+// 426 upgrade required error
