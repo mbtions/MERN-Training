@@ -1,0 +1,35 @@
+09-April-2024
+ 
+* Callback Queue * 
+
+Q. setInterval, clearInterval, etc
+
+EventLoop
+=> To push async tasks or parts into stack
+
+waiting areas for async tasks => 
+1. MicroTask Queue (High Priority) => Has code for promises or fetch
+2. Callback Queue (Low Priority)
+
+Can we create own promises? => Yes
+
+* Inversion of Control *
+control has been given to other.
+Example, makePayment control is given to createOrder to execute.
+there is no guarantee that makePayment will actually be called, or will be called only once.
+
+New Promise- User Defined
+
+new Promise( callback fn, )
+
+pending, fulfilled, rejected
+
+callback fn => (x, y) => {
+
+}
+
+this x, y is resolve, reject
+
+JavaScript Visualizer
+https://www.jsv9000.app/
+

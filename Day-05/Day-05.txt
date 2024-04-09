@@ -53,3 +53,13 @@ fetch promise is handled by browser.
 JavaScript is just a Callstack
 
 // 426 upgrade required error
+
+* ARRAY *
+shift() removes from index 0
+unshift() adds at index 0
+
+using delete() leaves undefined hole.
+
+we can merfe two arrays using concatenation
+arr1.concat(arr2) for two arrays
+arr1.concat(arr2, arr3) for three arrays
