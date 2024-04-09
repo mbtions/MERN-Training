@@ -33,3 +33,45 @@ this x, y is resolve, reject
 JavaScript Visualizer
 https://www.jsv9000.app/
 
+IP Address, MAC Address
+
+Server-Client
+
+Server helps us to access HTML from anywhere via internet.
+
+=> Latency, BandWidth, ThroughPut
+=> responseTime, processingTime
+=> IP Address, MAC Address
+=> Router, ISP, Internet
+=> DNS, HTTP vs https
+
+Latency is Delay(say 100ms) both times in requesting and getting response for a request.
+
+roundTrip is complete => requesting + receiving response.
+
+responseTime = request reaching to server time + response reaching to client time
+
+ThroughPut: actual capacity
+BandWidth: maximum capacity
+
+computernetworkingnotes
+
+If https has no ssl certificate? then
+=> no security
+=> sensitive information can be intercepted. 
+=> No encryption
+=> transactions will not carry out
+
+http[s]:=>
+s => supports encrypted data packets.
+
+ISP: Internet Service Provider
+
+repl: read evalualte process loop
+
+ES6
+
+nodejs.org 
+
+* Packages *
+npm js

@@ -89,9 +89,9 @@ console.log("Hello");
 // 1st value is an accumulator and remaining values are
 // console.log(ans)
 
-const arr = ['ab', 'cd', 'xy', 'z']
-const ans = arr.reduce((total, current, index, array)=>{
-    console.log(total, current, index, array)
-    // return total+current // when we not return we will have undefined values for rest of the places except first.
-});
-console.log(ans);
+// const arr = ['ab', 'cd', 'xy', 'z']
+// const ans = arr.reduce((total, current, index, array) => {
+//     console.log(total, current, index, array)
+//     // return total+current // when we not return we will have undefined values for rest of the places except first.
+// });
+// console.log(ans);
