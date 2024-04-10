@@ -75,3 +75,11 @@ nodejs.org
 
 * Packages *
 npm js
+
+
+object through array: using reduce
+flatMap, map, flat in array
+
+flatMap => filter + map
+
+replace function

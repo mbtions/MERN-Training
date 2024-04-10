@@ -1,0 +1,70 @@
+10-04-2024
+
+In Async Await, you can write try catch in place of .catch().
+
+If a website blocks, then it may have async await.
+
+Multiple buttons, with onclick, 
+
+blocking, non-blocking behaviours.
+
+
+object through array: using reduce
+flatMap, map, flat in array
+
+flatMap => filter + map
+
+replace function
+
+Module is nothing but a code.
+
+Main File System API are: 
+=> Promises API
+=> Callback API
+=> Synchronous API
+
+Data packets in buffer:
+to reduce load on server and to reduce waiting time of the user.
+
+// This data is in buffer because data is received in packets.
+
+converting packets to text form:
+=> toString() function
+=> or tell while reading the file using encoding => in [Options] parameter of the function
+=> {encoding: 'utf8'}
+
+For a RAM of 8KB, 12 GB data can be processed efficiently using buffer, that is why we  use buffer to read or write or load data.
+
+Even though time exceeds using buffer.
+
+readFileSync has blocking behaviour.
+
+File System through:
+=> Synchronous
+    readFileSync() from fs
+=> Callback 
+    readFile() from fs
+=> Promises 
+    readFile() from fs/promises
+
+Q. URI vs URL
+
+142.250.194.110 is the IP for google.
+
+DNS => fro picking IP address and map it with the domain.
+
+we use http to create server for our website.
+
+server has request and response.
+createServer(request, response)
+
+request.url will return the url that you would have on your server.
+
+package nodemon is used to reload itself again the server
+
+$> npm i -d nodemon 
+=> used to include in devDependencies rather than dependencies.
+Q. what is the benefit?
+
+Now write to run the server =>
+nodeman [FileName]
