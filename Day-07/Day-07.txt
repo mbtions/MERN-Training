@@ -67,4 +67,29 @@ $> npm i -d nodemon
 Q. what is the benefit?
 
 Now write to run the server =>
-nodeman [FileName]
+nodemon [FileName.js]
+
+or write
+npx nodemon
+
+Q. what are devDependencies?
+Q. statusCode
+
+// if in case port error:
+"start":'npx kill-port [PORT] && nodemon script'
+
+// also install kill-port using npm
+
+// console.log(Object.keys(request)); // all keys of your request
+
+
+let str = "Hello World!";
+str = str.replace("Hello", "Namaste");
+console.log(str);
+
+
+Q. object to jsonString
+Q. jsonString to object
+
+.json() => async
+.parse() => sync
