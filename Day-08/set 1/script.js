@@ -1,41 +1,33 @@
-const fs = require('fs')
-const http = require('http')
+const express = require('express')
 
-const data = fs.readFileSync('./data.json', {encoding: 'utf8'});
-const dataObj = JSON.parse(data).products
+const app = express();
 
-const cardTemplate = `
-<div class='product-card'>
-    <h3>__TITLE__</h3>
-    <img src="__IMAGE__" />
-    <a href="__PRODUCT__LINK__">More Info</a>
-</div>
-`
-
-let result = [];
-for (let i=0; i<dataObj.length; i++) {
-    let temp = cardTemplate;
-    temp = temp.replace('__TITLE__', dataObj[i].title);
-    temp = temp.replace('__IMAGE__', dataObj[i].images[0]);
-    temp = temp.replace('__PRODUCT__LINK__', `?id=${i}`);
-    result.push(temp);
-}
-result = result.join(' ')
-console.log(result);
-
-const server = http.createServer((req, res)=>{
-    console.log('Request Received...');
-    console.log(res.url);
-    // res.writeHead(200, 
-    //     {
-    //         'content-type': 'text/html'
-    //     }
-    // );
-    res.end(result);
+app.get('/', function (req, res) {
+    res.send('This is root page');
+});
+app.get('/home', function (req, res) {
+    res.send('This is Home page');
+    // res.send([1, 2, 3]); 
+    // you can send contentt other than string as well with this express server.
+});
+app.get('/product', (req, res)=>{
+    res.send('Welcome GET');
+})
+app.put('/product', (req, res)=>{
+    res.send('Welcome PUT');
+})
+app.patch('/product', (req, res)=>{
+    res.send('Welcome PATCH');
+})
+app.post('/product', (req, res)=>{
+    res.send('Welcome POST');
+})
+app.delete('/product', (req, res)=>{
+    res.send('Welcome DELETE');
 })
 
 const HOST = 'localhost'
-const PORT = 5500;
-server.listen(PORT, HOST, ()=>{
+const PORT = 5500
+app.listen(PORT, HOST, ()=>{
     console.log(`http://${HOST}:${PORT}`);
 });

@@ -19,3 +19,17 @@ nodemon
 
 
 nodemon only changes js file
+
+url for query
+
+// server side is very unique
+
+// use filters
+
+// ExpressJS
+
+fetch API to GET, POST, PUT, DELETE
+=> by default -> GET
+
+// POSTMAN
+
