@@ -4,7 +4,9 @@ const fs = require('fs');
 
 // to read data.js
 const data = fs.readFileSync('./data.json', {encoding: 'utf8'});
-// const dataObj = JSON.parse(data); // parse is a sync process
+// const dataObj = JSON.parse(data); 
+// parse is a sync process
+
 // const products = dataObj.products;
 const products = JSON.parse(data).products;
 
@@ -59,7 +61,10 @@ const cardTemplate = fs.readFileSync('./templates/card.html', 'utf8');
 
 const allCards = products.map((elem)=>{
     let newCard = cardTemplate
-    newCard = newCard.replace('__TITLE__', elem.title)
+    newCard = newCard.replace('__TITLE__', elem.title);
+    // let image = `<img class="product-image" src=${elem.thumbnail} />`    
+    newCard = newCard.replace('__THUMBNAIL__', elem.thumbnail);
+    // newCard = newCard.replace('__READ__MORE__', )
     newCard = newCard.replace('__INFO__', elem.description);
     return newCard;
 });
@@ -72,17 +77,16 @@ const page = htmlTemplate.replace('__PRODUCT__CARDS__', allCardsString); // card
 const app = http.createServer((request, response)=>{
     console.log("Request received");
     console.log(request.url);
-    
-    // response.end("<h1>Namaste Node!</h1><h3>This is Backend JS</h3>"); // to end the work of sending response
-    response.end(page);
-    // response.write('End'); // it does not ends the response or work of sending response
-
+   
     // writeHead
     response.writeHead(200, // it is the statusCode
-        {
-        'content-type': 'text/html', // it tells what type of content you are sending on the server
-        }
-    )
+    {
+    'content-type': 'text/html', // it tells what type of content you are sending on the server
+    })
+
+    // response.end("<h1>Namaste Node!</h1><h3>This is Backend JS</h3>"); // to end the work of sending response
+    response.end(page);
+    // response.write('End'); // it does not ends the response or work of sending response   
 });
 // app has all the functionalities of a server
 

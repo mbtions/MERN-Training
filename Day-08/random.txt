@@ -1,0 +1,24 @@
+const axios = require('axios');
+
+const options = {
+  method: 'GET',
+  url: 'https://spotify23.p.rapidapi.com/search/',
+  params: {
+    q: '<REQUIRED>',
+    type: 'multi',
+    offset: '0',
+    limit: '10',
+    numberOfTopResults: '5'
+  },
+  headers: {
+    'X-RapidAPI-Key': 'b7d4de5a97mshd51f6e127340e12p1165d9jsnc520e6a23453',
+    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}

@@ -24,7 +24,8 @@ Semantic Tags for what purpose?
 => for screen readers to interpret whats there on the page.
 
 Example: 
-1=>header tag
+
+1=>header Tag
 <header></header>
 
 2=>footer Tag
@@ -38,6 +39,12 @@ heading Tags:
 <h1> </h1> ..... <h6> </h6>
 
 Q. size(h6) < size(p) why??
+=> Reasons are:
+1. Semantic Meaning: to semantically structure your HTML document. This hierarchy is meaningful to SEO because it helps browser and assistive technologies understand the organization of your content. 
+2. Accessibility and SEO: Screen readers and other assitive technologies rely on these tags to navigate and understand the content.
+Using headings correctly ensures that the users with disabilities can navigate your page effectively, as well for the SEO purpose also.
+3. Styling and Presentation: 
+4. Consistency and Maintenance
 
 Comments in HTML:
 <!-- 

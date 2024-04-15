@@ -1,0 +1,21 @@
+15/04/24
+
+Recap:
+
+new folder
+script.js
+npm init
+nodemon
+
+1. Require node http module
+2. Create HTTP server
+3. Listen at a specified port
+4. Require node file system module fs
+5. create data.json file and read it using synchronous API in utf8 encoding
+6. parse json data into object
+7. read html files using synchronous API
+8. map all the array elements and update with custom information
+9. Update data on htmlTemplate
+
+
+nodemon only changes js file
