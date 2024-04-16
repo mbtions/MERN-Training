@@ -6,3 +6,49 @@ PATCH => specific detail replacement
 why /api/products ? and not /products only?
 
 To get all the products
+
+TYPE: http://localhost:5500/api/products in POSTMAN
+
+hit SEND button
+get the data inside the output window
+
+form data from frontend to backend is POST method.
+
+action="[POST method]"
+data in body and not in query, therefore we use POST method.
+As password in URL is not a good practice. (one of the methods)
+
+second method=> body method
+
+body > raw + JSON
+write some JSON inside and hit SEND in POSTMAN for POST
+
+
+write things in data
+
+// variables in params
+// query in questions
+
+// filter 
+// slice
+// flatmap
+
+
+PROBLEMS
+1. Whatif someone sends id which does not exists
+2. ID not exists
+3. Cannot post for unknown positions
+4. Compulsory data can be skipped, example price (data validation)
+5. 
+
+middleware
+router
+
+architecture of JS is of type of a middleware.
+app.get is also a middleware
+
+if same name two routes, then there must be error
+
+body parser
+
+everything is middleware in JS
