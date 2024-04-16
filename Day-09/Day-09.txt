@@ -1,0 +1,8 @@
+Search Functionality achieved.
+
+PUT => Complete details replacement
+PATCH => specific detail replacement
+
+why /api/products ? and not /products only?
+
+To get all the products
