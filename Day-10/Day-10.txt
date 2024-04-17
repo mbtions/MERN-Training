@@ -1,0 +1,91 @@
+17-04-2024
+
+npm i nodemon -g 
+to globally install nodemon in our system
+=> preferable since it is heavy for server [purpose] therefore install globally
+
+MongoDB
+
+const reqId = 3;
+const reqBody = {
+    'description': '..', 
+    'price': 20000
+}
+
+const arr = [
+    {
+        id: 3,
+        'title': 'Vacuum Cleaner',
+        'price': 16000
+    },
+    {
+        id: 5,
+        'title': 'Armani Watch',
+        'price': 6000
+    }
+]
+
+const newArr = arr.map((elem)=>{
+    if (elem.id === reId){ 
+        reqBody.id = reqId;
+        const newElement = {
+            ...reqBody, ...elem
+        }
+        // both reqBody, and elem are both merged
+        // price of reqBody will be overwritten by elem's price key
+    }
+})
+
+overwrites the value that has come lately or recently.
+
+spread operator removes {} around the object and just adds the data 
+ShareDrop web
+Ctrl+Shift+R => To hard refresh.
+
+Middleware usecases:
+Authentication
+Log file 
+
+
+Epoch time converter: 
+
+1. without route or router
+2. with route
+3. with router (express js)
+
+
+{
+    "title": "Philips Vacuum Cleaner",
+    "description": "A vacuum cleaner that helps you in daily chores",
+    "price": "4559",
+    "discountPercentage": 18.76,
+    "categories": "utilities",
+    "brand": "Philips",
+    "rating": 3.97
+}
+    
+Karna Kya hai? => Controllers batate hain
+Routes le jaate hain unn jagah par
+
+-> Controllers
+   - productControllers.js
+        const func1 = ()=>{...}
+        const func2 = ()=>{...}
+        module.exports = {func1, func2}
+   - usersControllers.js
+=> Routes
+    - productRoute.js
+        - import productControllers
+        - initialise routers
+                const productRouter = express.Router()
+        - assigned handlers on router
+        - export routers
+            module.exports = productRouter();
+script.js
+$
+    import (express, router)
+    const app = express()
+    middlewares (bodyParser, manual-logs)
+    router assigned to partiular route
+    spp.listen(PORT)
+$

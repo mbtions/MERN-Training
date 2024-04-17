@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Armani Watch",
+    "id": 2,
+    "price": 16000
+  },
+  {
+    "title": "Philips Vacuum Cleaner",
+    "description": "A vacuum cleaner that helps you in daily chores",
+    "price": "4559",
+    "discountPercentage": 18.76,
+    "categories": "utilities",
+    "brand": "Philips",
+    "rating": 3.97,
+    "id": 3
+  }
+]

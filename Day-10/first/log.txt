@@ -1,0 +1,17 @@
+/
+/
+/api/products
+/api/products	function () { [native code] }
+/api/users	17/4/2024, 10:35:18 am
+/api/users	17/4/2024, 10:36:37 am
+/api/products	17/4/2024, 10:39:34 am
+/api/products/2	17/4/2024, 10:39:47 am
+/api/products/2	17/4/2024, 10:41:12 am
+/api/products/2	17/4/2024, 10:41:24 am
+/api/products	17/4/2024, 11:01:49 am
+/api/products	17/4/2024, 11:36:01 am
+/api/products	17/4/2024, 11:46:20 am
+/api/products	17/4/2024, 11:46:40 am
+/api/products	17/4/2024, 11:48:40 am
+/api/products/2	17/4/2024, 11:54:06 am
+/api/products	17/4/2024, 11:55:30 am

@@ -130,6 +130,31 @@ app.delete("/api/products/:id", async (req, res) => {
   });
 });
 
+// app.patch("/api/products/:id", async (req, res) => {
+//   const arr = JSON.parse(await fsPromises.readFile("./dataa.json", "utf8"));
+//   const req = req.params.id;
+//   const data = req.body;
+//   data.id = reqId;
+//   console.log(data.id);
+//   const newArr = arr.map((elem) => {
+//     if (elem.id == reqId) {
+//       return data;
+//     } else {
+//       return elem;
+//     }
+//   });
+//   console.log(newArr);
+//   // fsPromises.writeFile("./dataa.json", JSON.stringify(newArr));
+
+//   res.json({
+//     status: "success",
+//     results: 1,
+//     data: {
+//       newProduct: data,
+//     },
+//   });
+// });
+
 const PORT = 5500;
 const HOST = "localhost";
 app.listen(PORT, HOST, () => {
