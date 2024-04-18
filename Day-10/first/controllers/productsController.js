@@ -81,8 +81,10 @@ const replaceProduct = async (req, res) => {
 // PATCH
 const updateProduct = async (req, res) => {
   const arr = JSON.parse(await fsPromises.readFile("./data.json", "utf8"));
+  console.log("products array:", arr);
   const reqId = req.params.id;
   const changes = req.body;
+  console.log("changes:", changes);
   changes.id = reqId;
   let newElement;
   const newArr = arr.map((elem) => {
@@ -93,8 +95,8 @@ const updateProduct = async (req, res) => {
       };
     }
   });
-  // console.log(newArr);
-  fsPromises.writeFile("./data.json", JSON.stringify(newArr));
+  console.log("New Array:", newArr);
+  // fsPromises.writeFile("./data.json", JSON.stringify(newArr));
 
   res.json({
     status: "success",
@@ -109,7 +111,6 @@ const updateProduct = async (req, res) => {
 const deleteProduct = async (req, res) => {
   const reqId = parseInt(req.params.id);
   const arr = JSON.parse(await fsPromises.readFile("../dataa.json", "utf8"));
-
   const newArr = arr.filter((elem) => {
     if (elem.id === reqId) return false;
     else return true;

@@ -87,5 +87,5 @@ $
     const app = express()
     middlewares (bodyParser, manual-logs)
     router assigned to partiular route
-    spp.listen(PORT)
+    app.listen(PORT)
 $
