@@ -1,0 +1,20 @@
+Mongoose ODM
+
+ODM : Object Data Modelling
+
+Refactoring is Preferable for better ABSTRACTION
+Query Casting
+
+Data Filtering:
+const data = await productModel.find({_id: req.params.id}); Normal way of finding by id
+const data = await productModel.find({price: 6000}); // all items with price equal to 6000 will be found
+// price: ($gte:06000) // greater than equal to
+
+
+// Query String for the same: http://localhost:5500/api/products?price[$lt]=1000
+// Code Part for the same:
+const data = await productModel.find({
+    price: {
+    $lt: 1000,
+    },
+});
